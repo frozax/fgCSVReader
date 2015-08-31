@@ -28,7 +28,7 @@ To use with Unity:
     }
 
     TextAsset text_asset = Resources.Load("csv_file");
-    fgCSVReader.Load(text_asset.text, new Delegate(MyReader));
+    fgCSVReader.Load(text_asset.text, new fgCSVReader.ReadLineDelegate(MyReader));
 
 See Test.cs for sample code.
 
