@@ -1,0 +1,5 @@
+Test,Comma,Quote,CRLF,UTF8
+Test,"comma,comma","quote""quote","crlf
+crlf","Играть プレイ 开始 플레이",LongerLine
+SmallerLine
+"All""at,이nçe","",,"had empty strings","<html></html>"
