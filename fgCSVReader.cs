@@ -70,7 +70,7 @@ public class fgCSVReader
                     // end of current item
                     cur_line.Add(cur_item.ToString());
                     cur_item.Length = 0;
-                    if (c == '\n')
+                    if (c == '\n' || cur_file_index == file_length)
                     {
                         // also end of line, call line reader
                         line_reader(cur_line_number++, cur_line);
