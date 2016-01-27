@@ -1,11 +1,11 @@
 C# CSV Reader
 ==========
 
-I initially made this to use with Unity but it's raw C#.
+I initially made this to use with Unity so it's raw C#.
 
 Supports:
 - empty cells
-- cells with quotes
+- cells with quotes/double quotes
 - cells with commas
 - cells with CRLF
 - utf8 characters
