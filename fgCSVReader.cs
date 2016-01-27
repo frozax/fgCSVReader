@@ -41,7 +41,13 @@ public class fgCSVReader
                 }
                 else
                 {
-                    if (file_contents[cur_file_index] == '"')
+                    if (cur_file_index == file_length)
+                    {
+                        // end of file
+                        inside_quotes = false;
+                        goto case '\n';
+                    }
+                    else if (file_contents[cur_file_index] == '"')
                     {
                         // double quote, save one
                         cur_item.Append("\"");
