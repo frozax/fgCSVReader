@@ -87,6 +87,8 @@ public class fgCSVReader
             default:
                 // other cases, add char
                 cur_item.Append(c);
+                if(cur_file_index == (file_length))
+                    goto case '\n';
                 break;
             }
         }
